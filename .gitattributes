@@ -1,11 +1,3 @@
-* text=auto eol=lf
-
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
-
-/.github export-ignore
-CHANGELOG.md export-ignore
-.styleci.yml export-ignore
+version https://git-lfs.github.com/spec/v1
+oid sha256:0371c5f21d67974d00c29f8bdb91cecd0a2d635f2e93433ce21ae23b8866f6f9
+size 212
