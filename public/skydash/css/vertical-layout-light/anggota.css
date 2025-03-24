@@ -1,0 +1,475 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Background for the entire page */
+}
+
+.content {
+  padding: 40px 20px; /* Add padding for space inside the content */
+  margin-left: 20px; /* Add left margin to separate content from sidebar */
+  margin-right: 20px; /* Add right margin to separate content from sidebar */
+  background-color: #f1f1f1; /* Light grey background for content area */
+  border-radius: 0; /* Slightly rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for better content elevation */
+  flex-grow: 1; /* Ensure content expands to fill available space */
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Ensure card background is white */
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+/* Styling for icons in the cards */
+.card-body i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 15px;
+}
+
+/* Custom styling for warnings */
+.warning {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Payment information styling */
+.payment-info {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.payment-due {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.button-container {
+  text-align: center;
+}
+
+.btn-bayar {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bayar:hover {
+  background-color: #218838;
+}
+
+/* Flex layout for cards in a row */
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container-scroller {
+  padding: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-text {
+  margin: 5px 0;
+}
+
+.payment-info,
+.payment-due {
+  font-size: rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-bayar {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-bayar:hover {
+  background-color: #218838;
+}
+
+.instructions h4 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions ol li {
+  margin-bottom: 10px;
+}
+
+/* Navbar, sidebar, and footer spacing adjustments */
+.container-fluid.page-body-wrapper {
+  padding-top: 70px; /* Space between navbar and content */
+  padding-bottom: 80px; /* Space between content and footer */
+}
+
+.sidebar {
+  margin-right: 10px; /* Spacing between sidebar and content */
+}
+
+/*home-pembayaran*/
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container-scroller {
+  padding: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-text {
+  margin: 5px 0;
+}
+
+.payment-info,
+.payment-due {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-bayar {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-bayar:hover {
+  background-color: #218838;
+}
+
+.instructions h4 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions ol li {
+  margin-bottom: 10px;
+}
+/*pembayaran*/
+
+/* Optional: Adjust padding for smaller devices */
+@media (max-width: 576px) {
+  .card {
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .container-scroller {
+    padding: 20px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+
+  .card-body {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .payment-info,
+  .payment-due {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .instructions h4 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+
+  .instructions ol {
+    padding-left: 20px;
+  }
+
+  .instructions ol li {
+    margin-bottom: 10px;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .card-header {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .card-content {
+    font-size: 16px;
+  }
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .profile-card .profile-info {
+    width: 100%;
+  }
+
+  .profile-card .profile-info div {
+    margin-bottom: 10px;
+  }
+
+  .profile-card .profile-info div span {
+    display: block;
+    font-weight: 500;
+  }
+
+  .profile-card .profile-info div i {
+    color: green;
+    margin-left: 5px;
+  }
+
+  .activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .activity-list li {
+    margin-bottom: 10px;
+  }
+
+  .activity-list li span {
+    font-weight: 500;
+  }
+
+  .activity-list li .amount {
+    color: green;
+    font-weight: 700;
+  }
+
+  .card-type {
+    background: url("https://placehold.co/300x200") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .card-type .card-number {
+    margin-top: 20px;
+  }
+
+  .balance-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .balance-card .balance {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .balance-card .label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .card-type-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .savings-card-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .loan-card-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .profile-card-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .activity-card-container {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}

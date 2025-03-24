@@ -1,0 +1,353 @@
+
+var count =  $('.isotope .isotope-item').filter(function() {
+    return $(this).css('display') !== 'none';
+}).length;
+
+$(document).ready(function(){	  
+    
+ $(".result").text(count);
+	   		
+});	
+
+
+$(document).ready(function(){
+		
+	$("#showFullNav").click(function(){
+    	$(".fullScreenNav").show();
+  	});
+  	$("#closeFullNav").click(function(){
+		$(".fullScreenNav").hide();
+	});
+});
+		
+	   		
+
+		
+	
+   
+$(document).ready(function(){
+    $('.owl1').owlCarousel({
+    loop:true,
+    margin:0,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+			margin:0,
+			dots:true
+        },
+      
+    }
+})
+
+	
+	   $('.owl2').owlCarousel({
+    loop:true,
+    margin:0,
+		   dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+			margin:0,
+			autoplay:true,
+			dots:true
+        },
+      
+		  768:{
+            items:2,
+            nav:false,
+			margin:20,
+			  
+			autoplay:true,
+			dots:true
+        },
+		
+		 1200:{
+            items:4,
+            nav:false,
+			margin:20,
+			 
+			autoplay:true,
+			dots:true
+        },
+    }
+})
+	
+
+	
+	
+
+	
+});
+		  
+		  
+	    
+	
+	
+	
+	
+	
+	
+ 
+	
+	
+	$(document).ready(function(){	
+		
+	$(".slideText").css({'height':($(".rightPart").height()+'px')});
+			
+			
+	});
+		
+	$(window).resize(function() {
+		
+	$(".slideText").css({'height':($(".rightPart").height()+'px')});
+	});
+			
+		
+
+			
+		
+  	
+		
+		
+	 
+	
+	$(window).on('resize', function() {
+    if($(window).width() < 991) {
+        $('.leftPart').addClass('makehalf');
+    }else{
+       
+        $('#leftPart').removeClass('makehalf');
+    }
+})
+	
+	
+	
+	  	
+	  
+		 
+	
+	$(document).ready(function(){	
+    if($(window).width() < 991) {
+        $('.leftPart').addClass('makehalf');
+		$('.rightPart').addClass('makehalf');
+    }else{
+       
+        $('#leftPart').removeClass('makehalf');
+		$('#rightPart').removeClass('makehalf');
+    }
+})
+	
+	
+	
+	  	
+	  
+	   
+	
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activetab");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+	
+	  
+	  
+	  
+	 
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+		panel.classList.add("expand");
+    }
+  });
+}
+	
+	  
+
+
+  var grid=$('.isotope');
+  var iso = grid.data('.isotope');
+  var filterCount = $('.filter-count');
+  var filter=$('.filter-button-group input');
+  var suche=$('.quicksearch');
+  var qsRegex;
+  var buttonFilter;
+  
+  grid.isotope({
+    itemSelector: '.isotope-item',
+	  layoutMode: 'vertical',
+	  filter: function() {
+		 // console.log(searchResult);
+		  var searchResult = qsRegex ? $(this).text().match( qsRegex ) : true;
+		  var buttonResult = buttonFilter ? $(this).is( buttonFilter ) : true;
+          update();
+		  return searchResult && buttonResult;
+		  
+  	}
+  });
+
+
+  
+  // use value of search field to filter
+  var quicksearch = suche.keyup( debounce( function() {
+	  qsRegex = new RegExp( quicksearch.val(), 'gi' );
+	  grid.isotope();
+	  update();
+  }, 200 ) );
+  
+  
+  // debounce so filtering doesn't happen every millisecond
+	function debounce( fn, threshold ) {
+	  var timeout;
+	  update();
+	  return function debounced() {
+		if ( timeout ) {
+		  clearTimeout( timeout );
+		}
+		function delayed() {
+		  fn();
+		  timeout = null;
+		}
+		timeout = setTimeout( delayed, threshold || 100 );
+	  };
+		
+	}
+
+
+
+
+
+  filter.change(function(){
+    var filters = [];
+
+    filter.filter(':checked').each(function(){
+      filters.push( this.value );
+    });
+     //filters = filters.join(', '); 	//OR
+	filters = filters.join(''); 		//AND
+	buttonFilter = filters;
+    grid.isotope();
+	 update();
+  });
+
+grid.on( 'click', '.accordion', function() {
+  console.log('clicked');
+  $('.isotope').isotope('layout');
+});
+	
+		
+function update() {
+    
+    var count =  $('.isotope .isotope-item').filter(function() {
+    return $(this).css('display') !== 'none';
+}).length;
+    
+     $(".result").text(count);
+     console.log(count);	 
+}
+			
+
+	
+	 
+$(document).ready(function (){
+
+    // Select and loop the container element of the elements you want to equalise
+    $('.container').each(function(){  
+      
+      // Cache the highest
+      var highestBox = 0;
+      
+      // Select and loop the elements you want to equalise
+      $('.desription', this).each(function(){
+        
+        // If this box is higher than the cached highest then store it
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height(); 
+        }
+      
+      });  
+            
+      // Set the height of all those children to whichever was highest 
+      $('.desription',this).height(highestBox);
+                    
+    }); 
+
+});
+
+
+// Fonts A+ A1
+
+$(function () {
+  $("#increase").click(function (resizeObjects) {
+    $("body").children().each(function () {
+      var size = parseInt($(this).css("font-size"));
+      size = size + 1 + "px";
+      $(this).css({
+        'font-size': size
+      });
+    });
+    
+  });
+});
+$(function () {
+  $("#decrease").click(function () {
+    $("body").children().each(function () {
+      var size = parseInt($(this).css("font-size"));
+      size = size - 1 + "px";
+      $(this).css({
+        'font-size': size
+      });
+    });
+  });
+});
+
+$(function () {
+  $("#increase").click(function () {
+    $("h1, h2, h3, h4, h5, p, a, li, button").each(function () {
+      var size = parseInt($(this).css("font-size"));
+      size = size + 1 + "px";
+      $(this).css({
+        'font-size': size
+      });
+    });
+  });
+});
+$(function () {
+  $("#decrease").click(function () {
+    $("h1, h2, h3, h4, h5, p, a, li, button").each(function () {
+      var size = parseInt($(this).css("font-size"));
+      size = size - 1 + "px";
+      $(this).css({
+        'font-size': size
+      });
+    });
+  });
+});
+	
+
+	  
+	       

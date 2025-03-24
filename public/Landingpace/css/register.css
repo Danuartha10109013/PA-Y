@@ -1,0 +1,266 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7; /* Optional: Set a background color */
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%; /* Responsive design */
+    box-sizing: border-box;
+}
+
+.register-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.register-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.register-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px; /* Add space between items */
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    min-width: 45%; /* Ensure two items per row */
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    color: var(--M3-sys-light-on-surface-variant, #49454f);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register-button {
+    background-color: #009ef7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #007bbf;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif; /* Ganti dengan 'Inter' jika Anda ingin menggunakan font Inter */
+    background-color: #e0e3e8;
+    height: 100%;
+    margin: 0;
+}
+label {
+    color: var(--M3-sys-light-on-surface-variant, #49454f);
+    font-family: "Roboto", sans-serif; /* Ubah jika ingin menggunakan Inter */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+/* Dan seterusnya untuk elemen-elemen lain */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+button:focus,
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e0e3e8;
+}
+
+/*------------*/
+.form-area {
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+    padding: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-area .form-inner {
+    width: 100%;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 15px 19px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #475f7b;
+    background-color: #fff;
+    border: 1px solid #dfe3e7;
+    border-radius: 0.267rem;
+    -webkit-transition: border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+    color: #475f7b;
+    background-color: #fff;
+    border-color: #5a8dee;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+.intl-tel-input,
+.iti {
+    width: 100%;
+}
+
+/* Styling for the form row and form group */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+/* Styling for the phone input container */
+.phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling for the country code span */
+.country-code {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    color: #555;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 4px 0 0 4px;
+}
+
+/* Styling for the phone input field */
+.phone-input input {
+    border: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 0 4px 4px 0;
+}
+
+.phone-input input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.register-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+}
+
+.password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.password-toggle-icon:hover i {
+    color: #000;
+}
+.required {
+    color: rgb(255, 81, 81);
+    font-weight: bold;
+}
