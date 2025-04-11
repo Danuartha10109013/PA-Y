@@ -1,26 +1,3 @@
-<?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     */
-public function up()
-{
-    Schema::table('penarikan_berjangka', function (Blueprint $table) {
-        $table->string('status_bendahara')->nullable()->after('column_name'); // Ganti 'column_name' dengan nama kolom terakhir atau kolom tertentu.
-    });
-}
-
-public function down()
-{
-    Schema::table('penarikan_berjangka', function (Blueprint $table) {
-        $table->dropColumn('status_bendahara');
-    });
-}
-
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a409540ea1e1cacc4abf2208843c55e7a49a7e4a647b25ca7cbe691e40cf335
+size 635
